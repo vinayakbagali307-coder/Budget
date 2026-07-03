@@ -1,0 +1,13 @@
+name = "budget-passbook-ai"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Created by `wrangler kv namespace create RATE_LIMIT_KV` — paste the id it gives you below.
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: restrict CORS to your actual hosted domain instead of "*".
+# Set via `wrangler secret put ALLOWED_ORIGIN` or as a plain var below.
+[vars]
+ALLOWED_ORIGIN = "*"
